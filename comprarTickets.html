@@ -45,26 +45,95 @@
 
           <main>
 
-            <div class="row justify-content-center">
-                <div class="card border-info mb-3" style="max-width: 18rem;">
+            <!-- cards -->
+
+            <div class="row justify-content-center descuentos">
+                <div class="card border-info mb-3" id ="descuento" style="max-width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">Estudiante</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold"> 80% </p>
+                      <p class="card-text fw-light text-secondary" id="subtitulo">* Presentar Documentacion</p>
                     </div>
                 </div>
-                <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card border-success mb-3" id ="descuento" style="max-width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">Junior</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold"> 50% </p>
+                      <p class="card-text fw-light text-secondary" id="subtitulo">* Presentar Documentacion</p>
                     </div>
                 </div>
-                <div class="card border-warning mb-3" style="max-width: 18rem;">
+                <div class="card border-warning mb-3" id ="descuento" style="max-width: 18rem;">
                     <div class="card-body">
                       <h5 class="card-title">Trainee</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">Tienen un descuento</p>
+                      <p class="card-text fw-bold"> 15% </p>
+                      <p class="card-text fw-light text-secondary" id="subtitulo">* Presentar Documentacion</p>
                     </div>
                   </div>
             </div>
+
+            <!-- formulario-->
+            <div id="oradores">
+              <div class="titulo text-uppercase">
+                <p class="fw-light" id="subtitulo">venta</p>
+                <p class="fs-3 fw-semibold">Valor de Ticket $200</p>
+              </div>
+
+              <form>
+                <div class="mb-3">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                    </div>
+                  </div>
+                </div>
+                 <div class="mb-3">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-3">
+                      <label for="cantidad" class="form-label">Cantidad</label>
+                      <input type="number" class="form-control" placeholder="cantidad" id="cantidad">
+                    </div>
+                    <div class="col-sm-3">
+                      <label for="categoria" class="form-label">Categoria</label>
+                      <select class="form-select" aria-label="Default select example" id="categoria">
+                        <option selected>Seleccionar...</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                      </select>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="mb-3">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-6">
+                      <div class="alert alert-primary" role="alert" id="result">Total a Pagar: $</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="row justify-content-center">
+                    <div class="d-grid gap-2 col-3">
+                      <button type="reset" class="btn btn-success btn-lg" onclick="resetear()">Borrar</button>
+                    </div>
+                    <div class="d-grid gap-2 col-3">
+                      <button type="reset" class="btn btn-success btn-lg" onclick="calcular();">Resumen</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
 
           </main>
 

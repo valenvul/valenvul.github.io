@@ -1,3 +1,4 @@
+
 #nav{
     background-color: rgb(64, 74, 77);
 }
@@ -70,3 +71,19 @@ ul{
   padding: 0 30px;
 }
 
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.descuentos{
+  display: flex;
+  gap: 5px;
+  padding-top: 15px;
+}
+
+#descuento{
+  text-align: center;
+  
+}
